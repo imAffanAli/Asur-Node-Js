@@ -1,7 +1,7 @@
-import express, { Request, Response } from 'express';
+import express, { Request, Response ,Application} from 'express';
 
-const app = express();
-const port = 3000;
+const app: Application = express();
+const port: number = 3000;
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello, World!');
